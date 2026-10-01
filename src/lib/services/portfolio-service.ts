@@ -66,7 +66,7 @@ const FALLBACK_PROJECTS: ProjectWithImages[] = [
       {
         id: 'f3b89845-6fbb-424f-8250-aba463a4e1fe',
         project_id: 'da09eb29-4922-42f0-97c0-93ccd06c5687',
-        image_url: '/uploads/1789813797363-g3h715.png',
+        image_url: 'https://bmxovhmzczfkgadmplne.supabase.co/storage/v1/object/public/project-images/1789813797363-g3h715.png',
         caption: 'Juro-AI Legal Studio Dashboard',
         sort_order: 1,
         created_at: '2026-09-19T10:33:34.059Z',
@@ -74,7 +74,7 @@ const FALLBACK_PROJECTS: ProjectWithImages[] = [
       {
         id: '11295b05-9603-4a17-aa6a-98ba351287b1',
         project_id: 'da09eb29-4922-42f0-97c0-93ccd06c5687',
-        image_url: '/uploads/1789813805539-757o9q.png',
+        image_url: 'https://bmxovhmzczfkgadmplne.supabase.co/storage/v1/object/public/project-images/1789813805539-757o9q.png',
         caption: 'Contextual Legal Assistant & Risk Analyzer',
         sort_order: 2,
         created_at: '2026-09-19T10:33:34.059Z',
@@ -82,7 +82,7 @@ const FALLBACK_PROJECTS: ProjectWithImages[] = [
       {
         id: '28593ef8-775d-4dc8-b637-e3a2dadea0f5',
         project_id: 'da09eb29-4922-42f0-97c0-93ccd06c5687',
-        image_url: '/uploads/1789813880890-jwn1wy.png',
+        image_url: 'https://bmxovhmzczfkgadmplne.supabase.co/storage/v1/object/public/project-images/1789813880890-jwn1wy.png',
         caption: 'Document Studio Agreement Generator',
         sort_order: 3,
         created_at: '2026-09-19T10:33:34.059Z',
