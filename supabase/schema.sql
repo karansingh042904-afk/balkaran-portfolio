@@ -19,7 +19,7 @@ $$ LANGUAGE plpgsql;
 -- 2. Profile Table
 -- ------------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS public.profile (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    id TEXT PRIMARY KEY DEFAULT gen_random_uuid()::TEXT,
     full_name TEXT NOT NULL,
     headline TEXT NOT NULL,
     short_intro TEXT,
@@ -136,7 +136,7 @@ CREATE TRIGGER set_experience_updated_at
 -- 5B. Education & Journey Table (for freshers, students, continuous learners)
 -- ------------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS public.education_journey (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    id TEXT PRIMARY KEY DEFAULT gen_random_uuid()::TEXT,
     type TEXT NOT NULL DEFAULT 'Education', -- 'Education', 'Certification', 'Course', 'Achievement', 'Learning'
     institution TEXT NOT NULL,
     title TEXT NOT NULL,
@@ -165,7 +165,7 @@ CREATE TRIGGER set_education_journey_updated_at
 -- 6. Skills Table
 -- ------------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS public.skills (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    id TEXT PRIMARY KEY DEFAULT gen_random_uuid()::TEXT,
     name TEXT NOT NULL,
     category TEXT NOT NULL,
     proficiency INTEGER CHECK (proficiency >= 1 AND proficiency <= 100),
